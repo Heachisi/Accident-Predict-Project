@@ -152,22 +152,3 @@ cd react/frontend && npm start
 docker-compose up -d
 ```
 
-## 📝 라이센스
-
-이 프로젝트는 MIT 라이센스 하에 있습니다.
-
-## 🤝 기여하기
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📞 연락처
-
-프로젝트 문의사항이 있으시면 Issues를 통해 연락해 주세요.
-
----
-
-**🚨 주의사항**: 프로덕션 환경에서 사용 시 보안 설정 및 데이터 백업을 반드시 확인하세요.
