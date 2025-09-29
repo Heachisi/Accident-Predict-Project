@@ -1,0 +1,157 @@
+/* 브라우저 기본 */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    height: 100%;
+}
+
+/* 페이지 컨테이너 */
+.benchmark-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #f5f5f5;
+}
+
+/* 네이비 상단바 */
+.benchmark-top-bar {
+    width: 100%;
+    height: 50px;
+    background-color: #0f1b46;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* 네이비바 텍스트 */
+.benchmark-top-bar .title {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* 제목 */
+.page-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 0.5rem;
+}
+
+/* 부제목 */
+.page-subtitle {
+    background-color: #f8f9fc;
+    border: 1px solid #e3e6f0;
+    padding: 0.75rem 1rem;
+    border-radius: 0.35rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* 전체 레이아웃 */
+.layout {
+    display: flex;
+    flex: 1;
+    background: #f5f5f5;
+}
+
+/* 사이드바 */
+.sidebar {
+    width: 260px;
+    background: white;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+/* 콘텐츠 */
+.content {
+    flex: 1;
+    padding: 20px;
+    background: #f5f5f5;
+    margin-top: 0;
+}
+
+/* 카드 */
+.card {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.35rem;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58,59,69,.15);
+    margin-bottom: 1.5rem;
+}
+
+/* 카드 헤더 (✅ 선 잘리지 않도록 수정) */
+.card-header,
+.custom-card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #f8f9fc;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    font-weight: 500;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    width: 100%;            /* 전체 너비 차지 */
+    box-sizing: border-box; /* padding 포함 */
+}
+
+/* 차트 카드 */
+.chart-card .card-body {
+    height: 350px;
+    padding: 0.5rem;
+}
+
+.chart-card .recharts-responsive-container {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* 홈 버튼 */
+.home-button {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.home-button:hover {
+    color: #f1f1f1;
+}
+
+/* ✅ 점수 & 메시지 카드 동일 크기 정사각형 (왼쪽 정렬) */
+.equal-card {
+    width: 220px;    /* 너비 */
+    height: 220px;   /* 높이 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* 안쪽 텍스트 중앙 */
+}
+
+
+/* 헤더 배너 영역 */
+.header-image {
+    position: relative;
+    width: 100%;
+    height: 42vh;          /* 크게: 35~50vh로 조절 */
+    min-height: 280px;     /* 너무 작지 않게 하한선 */
+    overflow: hidden;
+    margin-bottom: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* 이미지가 영역을 꽉 채우도록 */
+.header-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     /* 비율 유지하며 채우기 */
+    display: block;
+}
